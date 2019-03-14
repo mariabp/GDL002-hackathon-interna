@@ -1,0 +1,261 @@
+* {
+	box-sizing: border-box;
+	color: rgb(109, 108, 108);
+	font-family: ;
+	font-size: 16pt;
+	font-weight: 300;
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-color: rgb(241, 241, 241);
+}
+
+ 
+ main {
+	display: grid;
+	height: 100vh;
+	width: 100vw;
+	overflow: auto;
+	grid-template-columns: 1fr 25vw 25vw 25vw 1fr;
+	grid-template-rows: 4rem 1rem auto 1rem 3rem;
+	grid-template-areas: 
+			"header header header header header"
+			". . . . ." 
+			". content content content ."
+			". . . . ."
+			"footer footer footer footer footer";
+}
+
+header {
+	grid-area: header;
+	display: grid;
+	grid-template-columns: 1fr 10vw auto 10vw 1fr;
+	grid-template-areas: ". logo . buttonmenu .";
+}
+
+footer {
+	grid-area: footer;
+	display: grid;
+	grid-template-columns: 1fr 10vw 10vw 10vw 10vw 10vw 25vw 1fr;
+	grid-template-areas: ". fbbutton twitterbutton pinterestbutton igbutton button . .";
+}
+#homescreen {
+	grid-area: content;
+	display: grid;
+	grid-template-columns: 25vw 25vw 25vw;
+	grid-template-rows: auto 2rem 0.5rem 20vh 0.5rem 3rem 0.5rem auto 0.5rem 3rem 0.5rem;
+	grid-template-areas:
+			". h1 ." 
+			"video video video"
+			". . ."
+			"barra barra barra"
+			". . ."
+			"texto texto texto"
+			". . ."
+			"getmoviesbutton getmoviesbutton getmoviesbutton"
+			". . ."
+}
+
+#showMovies {
+	grid-area: content;
+	display: grid;
+	grid-template-columns: 35vw 5vw 35vw;
+	grid-template-rows: 3rem 1rem 3rem 0.5rem auto minmax(1rem 1fr);
+	grid-template-areas:
+		"barra barra barra"
+		". . ."
+		"suggestion arrow select"
+		". . ."
+		"suggestionresults . selectresults"
+		". . ."
+}
+#homescreen {
+	grid-area: content;
+	display: grid;
+	grid-template-columns: 25vw 25vw 25vw;
+	grid-template-rows: auto 2rem 0.5rem 20vh 0.5rem 3rem 0.5rem auto 0.5rem 3rem 0.5rem;
+	grid-template-areas:
+		". resourcesTitle ." 
+		"resources resources resources"
+		". . ."
+}
+/* The side navigation menu */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	right: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	left: 25px;
+	font-size: 36px;
+	margin-right: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+	transition: margin-right .5s;
+	padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+	}
+	
+#timeline-wrap{
+	margin:20% 20%;
+	top:100;
+	position:relative;
+   
+  }
+  
+  #timeline{
+	height:1px;
+	width: 100%;
+	background-color:#aabbc4;
+	position:relative;
+   
+  }
+  
+   .marker{
+	 z-index:1000;
+	 color: #fff;
+	width: 20px;
+	height: 20px;
+	line-height: 50px;
+	font-size: 1.4em;
+	text-align: center;
+	position: absolute;
+	margin-left: -25px;
+	background-color: #999999;
+	border-radius: 50%;
+		  }
+  
+   .marker:hover{
+	 -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+	 
+	 -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+   }
+  
+  
+  .timeline-icon.one {
+	  background-color: #3e4f88 !important;
+  }
+  
+  .timeline-icon.two {
+	  background-color: #536295 !important;
+  }
+  
+  .timeline-icon.three{
+	  background-color: #6976a2 !important;
+  }
+  
+  .timeline-icon.four {
+	  background-color: #7e8aaf !important;
+  }
+	
+	.timeline-icon.five {
+	  background-color: #7e8aaf !important;
+  }
+  
+  .mfirst{
+		 top:-10px;
+		 left: 0%;
+  }
+  
+  .m2{
+	   top:-10px;
+		left:12%
+  }
+  
+  .m3{
+	   top:-10px;
+	  left:24%
+  }
+	
+	.m4{
+		top:-10px;
+	 left:36%
+ }
+ .m5{
+	top:-10px;
+ left:48%
+}
+.m6{
+	top:-10px;
+ left:60%
+}
+
+.m7{
+	top:-10px;
+ left:72%
+}
+  
+  .mlast{
+	   top:-10px;
+	  left:100%
+  }
+  
+  .timeline-panel {
+	margin-top: 20%;
+	  width: 500px;
+	height: 200px;
+	background-color: #cbd0df;
+	border-radius:2px;
+	  position:relative;
+	  text-align:left;
+	padding:10px;
+	  font-size:20px;
+	  font-weight:bold;
+	  line-height:20px;
+	float:left;
+  }
+  
+  .timeline-panel:after {
+	  content:'';
+	  position:absolute;
+	margin-top: -12%;
+	  left:10%;
+	  width:0;
+	  height:0;
+	  border:12px solid transparent;
+	  border-bottom: 15px solid #cbd0df;
+  }
+  
+  
