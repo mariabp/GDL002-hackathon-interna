@@ -1,4 +1,4 @@
-{
+const MOVIES = {
     "dataMovies": [{
       "Title": "The Pursuit of Happyness",
       "Year": "2006",
