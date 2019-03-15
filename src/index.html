@@ -17,10 +17,10 @@
 								<!-- Menu -->
 				<div id="mySidenav" class="sidenav">
 						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-						<a href="#">About</a>
-						<a href="#">Services</a>
-						<a href="#">Clients</a>
-						<a href="#">Contact</a>
+						<a id="About">About</a>
+						<a id="Movies">Movies</a>
+						<a id="Resources">Resources & FAQs</a>
+						<!--<a href="#">Sugestions</a>-->
 					  </div>
 					  
 					  <!-- Use any element to open the sidenav -->
@@ -32,7 +32,7 @@
 
 				
 				
-				<main id="main"> 
+				<main> 
 					<!-- Header -->
 					<header id="header">
 							<div class="inner">
@@ -45,20 +45,18 @@
 				<!-- HOME SCREEN -->
 						<div id="homescreen">
 							<h1>Hormonal Cycle?</h1>
-							<span class="image main"><iframe id="videoExplication" width="560" height="315" src="https://www.youtube.com/embed/WOi2Bwvp6hw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-							<div>
-							barra ciclo
+							<span class="image main"><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/WOi2Bwvp6hw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+							<div id= "content">
 							</div>
-							<div>
-									cuadro de texto
-							</div>
-
+							<p>This page is designed for all those who are interested in enjoying a good movie according to their emotional state. The main objective of this page is to raise awareness of the menstrual cycle and the emotional changes that this entails so we show you this short video explaining these stages:</p>
+							
 
 							<div>BOTON IR A MOVIES</div>
 						
 				</main>	
 					<!-- MOVIES SCREEN -->
-					<div id="barra ciclo">
+					<div id="showMovies" style= "display:none">
+						<div id="barra">
 						<div id="timeline-wrap">
 							<div id="timeline"></div>
 							
@@ -115,6 +113,7 @@
 						   
 						  </div>
 						  	<br>
+					</div>
 					</div>
 				
 				<!-- Footer -->

@@ -13,7 +13,7 @@ body {
 
  
  main {
-	display: grid;
+	/*display: grid;*/
 	height: 100vh;
 	width: 100vw;
 	overflow: auto;
@@ -58,7 +58,7 @@ footer {
 }
 
 #showMovies {
-	grid-area: content;
+	grid-area: showMovies;
 	display: grid;
 	grid-template-columns: 35vw 5vw 35vw;
 	grid-template-rows: 3rem 1rem 3rem 0.5rem auto minmax(1rem 1fr);
@@ -70,7 +70,7 @@ footer {
 		"suggestionresults . selectresults"
 		". . ."
 }
-#homescreen {
+#resources {
 	grid-area: content;
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw;
@@ -175,25 +175,37 @@ footer {
   
   
   .timeline-icon.one {
-	  background-color: #3e4f88 !important;
+	  background-color: #3C9ADE !important;
   }
   
   .timeline-icon.two {
-	  background-color: #536295 !important;
+	  background-color: #FFE606!important;
   }
   
   .timeline-icon.three{
-	  background-color: #6976a2 !important;
+	  background-color: #2ED903 !important;
   }
   
   .timeline-icon.four {
-	  background-color: #7e8aaf !important;
+	  background-color: #F40E0E !important;
   }
 	
 	.timeline-icon.five {
-	  background-color: #7e8aaf !important;
-  }
-  
+	  background-color: #F8AAAA !important;
+	}
+	
+	.timeline-icon.six {
+	  background-color: #C889E5 !important;
+	}
+	
+	.timeline-icon.seven {
+	  background-color: #FDB344 !important;
+	}
+
+	.timeline-icon.eight {
+	  background-color: #8CFBE7 !important;
+	}
+	
   .mfirst{
 		 top:-10px;
 		 left: 0%;
